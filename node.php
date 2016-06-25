@@ -395,7 +395,7 @@ class IRCBot {
 
 $bots = array();
 
-$bot = new IRCBot("qb2");
+$bot = new IRCBot("qb");
 array_push($bots, $bot->Connect("afternet.txt", "tcp://irc.afternet.org:6667", "#PhoenixRising"));
 
 #$bot = new IRCBot("qb");
