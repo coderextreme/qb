@@ -138,7 +138,7 @@ class IRCBot {
 				$this->Emit("PONG {$array[1]}\r\n");
 				if (!$this->pinged) $this->Rejoin();
 				$this->pinged = true;
-				if (!$this->quiet && ($this->count > 5 || $this->count30 > 10)) {
+				if (!$this->quiet && ($this->count > 8 || $this->count30 > 15)) {
 					$this->RandomQuote($this->tag);
 					$this->count = 0;
 					$this->count30 = 0;
